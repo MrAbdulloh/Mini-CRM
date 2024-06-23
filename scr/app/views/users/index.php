@@ -34,12 +34,8 @@ ob_start();
                 <td><?= $user['is_admin'] ? 'Yes' : 'No' ?></td>
                 <td><?= $user['created_at'] ?></td>
                 <td>
-<!--                                    <a href="index.php?page=users&action=edit&id=-->
-<!--                    --><?php //= $user[$id] ?><!--" class="btn btn-primary">Edit</a>-->
-<!--                                    <a href="index.php?page=users&action=delete&id=-->
-<!--                    --><?php //= $user[$id] ?><!--" class="btn btn-danger">Delete</a>-->
-                    <a href="#<?= $user['id'] ?>" class="btn btn-primary">Edit</a>
-                    <a href="#<?= $user['id'] ?>" class="btn btn-danger">Delete</a>
+                    <a href="index.php?page=users&action=edit&id=<?=$user['id']?>" class="btn btn-primary">Edit</a>
+                    <a href="index.php?page=users&action=delete&id=<?= $user['id'] ?>" class="btn btn-danger">Delete</a>
                 </td>
             </tr>
         <? endforeach; ?>

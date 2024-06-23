@@ -20,6 +20,16 @@ class Router
                         case 'store':
                             $controller->store();
                             break;
+                        case 'delete':
+                            $controller->delete();
+                            break;
+                        case 'edit':
+                            $controller->edit();
+                            break;
+                        case 'update':
+                            $controller->update();
+
+
                     }
                 } else {
                     $controller->index();
