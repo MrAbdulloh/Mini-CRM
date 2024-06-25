@@ -1,16 +1,19 @@
 <?php
 namespace App\views\users;
 
-//use App\Models\User;
-
 $title = "User list";
 ob_start();
 ?>
 <h1>Create user</h1>
 <form method="post" action="index.php?page=users&action=store">
     <div class="form-group">
-        <label for="login">Login</label>
-        <input type="text" name="login" class="form-control" id="" placeholder="Login">
+        <label for="login">Username</label>
+        <input type="text" name="username" class="form-control" id="" placeholder="Username">
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="login">Email</label>
+        <input type="email" name="email" class="form-control" id="" placeholder="Email">
     </div>
     <br>
     <div class="form-group">
@@ -24,13 +27,6 @@ ob_start();
                placeholder="Confirm Password">
     </div>
     <br>
-    <div class="form-group">
-        <label for="admin">Admin</label>
-        <select name="is_admin" id="admin" class="form-control">
-            <option value="0">No</option>
-            <option value="1">Yes</option>
-        </select>
-    </div>
     <br>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

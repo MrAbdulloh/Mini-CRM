@@ -28,6 +28,10 @@ class Database
         $db_pass = $config['db_pass'];
         $db_name = $config['db_name'];
 
+//        $db_host = 'db';
+//        $db_user = 'root';
+//        $db_pass = 'password';
+//        $db_name = 'dbname';
         try {
             $dsn = "mysql:host=$db_host;dbname=$db_name";
             $this->conn = new \PDO($dsn, $db_user, $db_pass);

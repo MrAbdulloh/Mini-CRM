@@ -15,16 +15,24 @@
 <body>
 
 <div class="container">
-    <nav class="navbar navbar-expend-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">crm_for_telegram</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="index.php?page=users" class="nav-link">Users</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link active" href="index.php?home">crm_for_telegram</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="index.php?page=users">Users</a>
+        </li>
+    </ul>
+<!--    <nav class="navbar navbar-expend-lg navbar-light bg-light">-->
+<!--        <div class="navbar-collapse" id="navbarNav">-->
+<!--            <a class="navbar-brand " href="index.php?home">crm_for_telegram</a>-->
+<!--            <ul class="navbar-nav">-->
+<!--                <li class="nav-item">-->
+<!--                    <a href="index.php?page=users" class="nav-link">Users</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </nav>-->
     <div class="container mt-4">
         <?php echo $content; ?>
     </div>

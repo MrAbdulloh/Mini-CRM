@@ -3,6 +3,7 @@
 namespace App;
 
 use App\controllers\users\UsersController;
+use App\controllers\users\HomeController;
 
 class Router
 {
@@ -10,6 +11,11 @@ class Router
     {
         $page = isset($_GET['page']) ? $_GET['page'] : 'home';
         switch ($page) {
+            case "":
+            case 'home':
+                $controller = new HomeController();
+                $controller->index();
+                break;
             case 'users':
                 $controller = new UsersController();
                 if (isset($_GET['action'])) {
